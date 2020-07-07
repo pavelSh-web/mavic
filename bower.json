@@ -1,0 +1,21 @@
+{
+  "name": "gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1",
+    "jquery-ui": "^1.12.1"
+  },
+  "devDependencies": {}
+}

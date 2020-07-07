@@ -1,0 +1,40 @@
+
+@import "mixins";
+
+/*
+  Сhoose one of the ways:
+    1. handle menthod,
+    2. use mixin;
+*/
+
+
+/*
+  // Base Helvetica (example):
+  @font-face {
+    font-family: "Helvetica-Base";
+    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot'); // IE9 Compat Modes
+    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+         url('/assets/fonts/Helvetica/Base/Helvetica-Base.woff') format('woff'), // Pretty Modern Browsers
+         url('/assets/fonts/Helvetica/Base/Helvetica-Base.ttf')  format('truetype'), // Safari, Android, iOS
+         url('/assets/fonts/Helvetica/Base/Helvetica-Base.svg') format('svg'); // Legacy iOS
+  }
+*/
+
+
+// Base OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensans");
+
+
+// Italic OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansItalic", 400, italic);
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Regular", 400);
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Semibold", 600);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Light", 300);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Regular", 400);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Medium", 500);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Bold", 700);
+
+//Google Fonts
+//&subset=cyrillic-ext
+
+
