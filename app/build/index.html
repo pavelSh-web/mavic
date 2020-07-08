@@ -11,34 +11,36 @@
 <body>
     <header class="header">
         <div class="header__container _container">
-            <a href="#" class="header__logo">
-                <picture class="logo__image">
-                    <source srcset="assets/image/logo_s.png" media="(max-width: 600px)">
-                    <img src="assets/image/logo_xs.png" alt="">
-                </picture>
-            </a>
-            <nav class="header-menu">
-                <ul class="header-menu__list">
-                    <li class="header-menu__item">
-                        <a href="#products" class="header-menu__link">О ДРОНЕ</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#benefits" class="header-menu__link">ПРЕИМУЩЕСТВА</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#specifications" class="header-menu__link">ХАРАКТЕРИСТИКИ</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#questions" class="header-menu__link">ВОПРОСЫ</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#contacts" class="header-menu__link">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__info">
-                <button class="header__bnt">Купить</button>
-                <a href="tel:80505676767" class="header__phone">8 (050) 567 67 67</a>
+            <div class="header__inner">
+                <a href="#" class="header__logo" data-scroll-top>
+                    <picture class="logo__image">
+                        <source srcset="assets/image/logo-phone.svg" media="(max-width: 600px)">
+                        <img src="assets/image/logo.svg" alt="">
+                    </picture>
+                </a>
+                <nav class="header-menu">
+                    <ul class="header-menu__list" data-scroll-menu>
+                        <li class="header-menu__item">
+                            <a href="#products" class="header-menu__link">О ДРОНЕ</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#benefits" class="header-menu__link">ПРЕИМУЩЕСТВА</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#specifications" class="header-menu__link">ХАРАКТЕРИСТИКИ</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#questions" class="header-menu__link">ВОПРОСЫ</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#contacts" class="header-menu__link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__info">
+                    <button class="header__bnt">Купить</button>
+                    <a href="tel:80505676767" class="header__phone">8 (050) 567 67 67</a>
+                </div>
             </div>
         </div>
     </header>
@@ -48,7 +50,7 @@
                 <div class="top__inner">
                     <h1 class="top__title">Mavic 2 Pro</h1>
                     <img class="top__image" src="assets/image/content/main-drone.png" alt="Mavic Pro">
-                    <div class="top_desc">Квадрокоптер Dji Mavic 2 Pro
+                    <div class="top__desc">Квадрокоптер Dji Mavic 2 Pro
                         с профессиональной камерой Hasselblad</div>
                     <div class="header-social social">
                         <ul class="social__list">
@@ -144,10 +146,14 @@
                             <div class="products-slider__item">
                                 <img class="products-slider__image" src="assets/image/content/slider-photo_1.jpg" alt="">
                             </div>
-
-                            <div class="products-slider__item">
-                                <img class="products-slider__image" src="assets/image/content/slider-photo_1.jpg" alt="">
-                            </div>
+                        </div>
+                        <div class="products-slider__arrows">
+                            <button class="products-slider__arrow products-slider__arrow_prev">
+                                <img src="assets/image/icon/slider-prev.svg" alt="">
+                            </button>
+                            <button class="products-slider__arrow products-slider__arrow_next">
+                                <img src="assets/image/icon/slider-next.svg" alt="">
+                            </button>
                         </div>
                     </div>
                 </div>

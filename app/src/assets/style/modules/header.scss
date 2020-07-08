@@ -1,4 +1,16 @@
 .header {
+    position: fixed; 
+    left: 0;
+    top: 30px;
+    z-index: 50;
+    width: 100%;
+    text-transform: uppercase;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 30px;
+    }
 
     &__container {}
 
@@ -6,20 +18,37 @@
 
     &__info {}
 
-    &__bnt {}
+    &__bnt {
+        transition: all 0.1s ease;
+        border: 1px solid $mainFontColor;
+        border-radius: 3px;
+        padding: 7px 28px;
+    }
+    &__bnt:hover {
+        background-color: $mainFontColor;
+        color: #000;
+    }
 
-    &__phone {}
-}
-
-.logo {
-    &__image {}
+    &__phone {
+        margin: 0px 0px 0px 8px;
+        
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
 .header-menu {
+    font-size: 15px;
+    font-weight: 500;
+    &__list {
+        display: flex;
+    }
 
-    &__list {}
+    &__item {
+        margin: 0px 10px;
+    }
 
-    &__item {}
-
-    &__link {}
+    &__link:hover {
+        text-decoration: underline;
+    }
 }
