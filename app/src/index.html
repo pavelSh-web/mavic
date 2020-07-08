@@ -9,9 +9,41 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    //= template/header.html
+    <header class="header">
+        <div class="header__container _container">
+            <a href="#" class="header__logo">
+                <picture class="logo__image">
+                    <source srcset="assets/image/logo_s.png" media="(max-width: 600px)">
+                    <img src="assets/image/logo_xs.png" alt="">
+                </picture>
+            </a>
+            <nav class="header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a href="#products" class="header-menu__link">О ДРОНЕ</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#benefits" class="header-menu__link">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#specifications" class="header-menu__link">ХАРАКТЕРИСТИКИ</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#questions" class="header-menu__link">ВОПРОСЫ</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#contacts" class="header-menu__link">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__info">
+                <button class="header__bnt">Купить</button>
+                <a href="tel:80505676767" class="header__phone">8 (050) 567 67 67</a>
+            </div>
+        </div>
+    </header>
     <main>
-        <section class="page-section top">
+        <section class="page-section top" id="top">
             <div class="top__container _container">
                 <div class="top__inner">
                     <h1 class="top__title">Mavic 2 Pro</h1>
@@ -77,13 +109,13 @@
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="scroll-btn">
+                <a href="#" class="scroll-btn" data-scroll-next>
                     <img class="scroll-btn__image" src="assets/image/icon/scroll-arrow.svg" alt="">
                 </a>
             </div>
         </section>
 
-        <section class="page-section products">
+        <section class="page-section products" id="products">
             <div class="products__container _container">
                 <h2 class="products__title title">Что такое Mavic 2 Pro?</h2>
                 <div class="products__inner">
@@ -119,13 +151,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="scroll-btn">
+                <a href="#" class="scroll-btn" data-scroll-next>
                     <img class="scroll-btn__image" src="assets/image/icon/scroll-arrow.svg" alt="">
                 </a>
             </div>
         </section>
 
-        <section class="page-section benefits">
+        <section class="page-section benefits" id="benefits">
             <div class="benefits__container _container">
                 <h2 class="benefits__title title">Преимущества</h2>
                 <div class="benefits__inner">
@@ -189,13 +221,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="scroll-btn">
+                <a href="#" class="scroll-btn" data-scroll-next>
                     <img class="scroll-btn__image" src="assets/image/icon/scroll-arrow.svg" alt="">
                 </a>
             </div>
         </section>
 
-        <section class="page-section specifications">
+        <section class="page-section specifications" id="specifications">
             <div class="specifications__container _container">
                 <h2 class="specifications__title title">Характеристики</h2>
                 <div class="specifications__inner">
@@ -236,13 +268,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="scroll-btn">
+                <a href="#" class="scroll-btn" data-scroll-next>
                     <img class="scroll-btn__image" src="assets/image/icon/scroll-arrow.svg" alt="">
                 </a>
             </div>
         </section>
 
-        <section class="page-section questions">
+        <section class="page-section questions" id="questions">
             <div class="questions__container _container">
                 <h2 class="questions__title title">Остались вопросы?</h2>
                 <div class="questions__inner">
@@ -289,13 +321,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="scroll-btn">
+                <a href="#" class="scroll-btn" data-scroll-next>
                     <img class="scroll-btn__image" src="assets/image/icon/scroll-arrow.svg" alt="">
                 </a>
             </div>
         </section>
 
-        <section class="page-section contacts">
+        <section class="page-section contacts" id="contacts">
             <div class="contacts__container _container">
                 <h2 class="contacts__title title">Контакты</h2>
                 <div class="contacts__inner">
@@ -389,7 +421,11 @@
             </div>
         </section>
     </main>
-    //= template/footer.html
+    <footer class="footer">
+        <div class="footer__container _container">
+            <small class="copyright">© DJI, 2020</small>
+        </div>
+    </footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
