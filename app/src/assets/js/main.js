@@ -5,7 +5,6 @@
 //= ../libs/js/jquery-ui.js
 
 //= modules/scrollTo.js
-//= modules/scrollNextSection.js
 
 
 $('.header__logo').click(function () {
